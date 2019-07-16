@@ -29,4 +29,6 @@ Important Points:
 
 Build Instructions:
 
-In order to run the app, please use latest Xcode (atleast Xcode 10.2.1). Can run on simulator as well.
+In order to run the app, please use latest Xcode (atleast Xcode 10.2.1).
+Cannot run on simulator as well. DRM contents playback is not supported in Simulator.
+Must use actual device with OS > 11
