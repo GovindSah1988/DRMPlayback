@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xaw-0Z-Gd7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contents View Controller-->
+        <scene sceneID="Zfk-pD-ttZ">
+            <objects>
+                <viewController storyboardIdentifier="ITContentsViewController" id="Xaw-0Z-Gd7" customClass="ITContentsViewController" customModule="IndeeTv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qB-W5-Izk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRx-mO-v7L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="fM4-EO-CfS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Downloads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saw-db-adP">
+                                <rect key="frame" x="19" y="94" width="129" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHo-hM-07d">
+                                <rect key="frame" x="0.0" y="130.5" width="414" height="731.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xaw-0Z-Gd7" id="WaS-yb-Qef"/>
+                                    <outlet property="delegate" destination="Xaw-0Z-Gd7" id="U4O-iV-0XB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="saw-db-adP" firstAttribute="top" secondItem="rRx-mO-v7L" secondAttribute="bottom" constant="25" id="1ck-jk-dek"/>
+                            <constraint firstItem="MBX-iS-Ato" firstAttribute="bottom" secondItem="eHo-hM-07d" secondAttribute="bottom" id="5hE-WS-Qte"/>
+                            <constraint firstItem="saw-db-adP" firstAttribute="leading" secondItem="MBX-iS-Ato" secondAttribute="leading" constant="19" id="ABd-kr-LV9"/>
+                            <constraint firstItem="rRx-mO-v7L" firstAttribute="leading" secondItem="MBX-iS-Ato" secondAttribute="leading" id="EeT-NQ-abb"/>
+                            <constraint firstItem="eHo-hM-07d" firstAttribute="top" secondItem="saw-db-adP" secondAttribute="bottom" constant="15" id="Iaf-5v-uTs"/>
+                            <constraint firstItem="rRx-mO-v7L" firstAttribute="top" secondItem="8qB-W5-Izk" secondAttribute="top" id="UTl-Pj-9Od"/>
+                            <constraint firstItem="MBX-iS-Ato" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="saw-db-adP" secondAttribute="trailing" constant="25" id="X3u-6e-fUO"/>
+                            <constraint firstItem="MBX-iS-Ato" firstAttribute="trailing" secondItem="eHo-hM-07d" secondAttribute="trailing" id="aTs-Hg-G40"/>
+                            <constraint firstItem="MBX-iS-Ato" firstAttribute="trailing" secondItem="rRx-mO-v7L" secondAttribute="trailing" id="gCK-9V-TQu"/>
+                            <constraint firstItem="eHo-hM-07d" firstAttribute="leading" secondItem="MBX-iS-Ato" secondAttribute="leading" id="l4T-xf-BmM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MBX-iS-Ato"/>
+                    </view>
+                    <connections>
+                        <outlet property="navigationHeaderView" destination="rRx-mO-v7L" id="9Bm-WT-S06"/>
+                        <outlet property="tableView" destination="eHo-hM-07d" id="Pxn-p2-GsJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hs4-8i-EtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="-147"/>
+        </scene>
+    </scenes>
+</document>

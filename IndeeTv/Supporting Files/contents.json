@@ -1,0 +1,68 @@
+{
+    "assets": [
+    {
+        "title": "Wine Country",
+        "custom data": {
+            "genres": ["Comedy"],
+            "ageRestriction": "16+",
+            "custom name": "CustomData",
+            "custom value": "QLZJ4x1bYmugLukqOLPWvfrxRcivmjzl"
+        },
+        "drm": {
+            "fairplay": {
+                "processSpcUrl": "https://fps.ezdrm.com/api/licenses/75b51abc-9bce-4b96-a552-805eea397733",
+                "certificateUrl": "https://d8qtl3txcpjuu.cloudfront.net/fairplay.cer"
+            }
+        },
+        "offline_ios_file": "https://d8qtl3txcpjuu.cloudfront.net/7786/video/29723/drmshield/hls/master_7786_29723_offline_ios.m3u8"
+    },
+    {
+        "title": "To All The Boys I've Loved Before",
+        "custom data": {
+            "genres": ["Comedy", "Drama", "Teen"],
+            "ageRestriction": "16+",
+            "custom name": "CustomData",
+            "custom value": "ivjlovyQTdZz9UYAj4VIjThMnQVgBmw3"
+        },
+        "drm": {
+            "fairplay": {
+                "processSpcUrl": "https://fps.ezdrm.com/api/licenses/06e08ff7-3e68-4112-a571-8f8adb75f6e5",
+                "certificateUrl": "https://d8qtl3txcpjuu.cloudfront.net/fairplay.cer"
+            }
+        },
+        "offline_ios_file": "https://d8qtl3txcpjuu.cloudfront.net/7786/video/29720/drmshield/hls/master_7786_29720_offline_ios.m3u8"
+    },
+    {
+        "title": "VIDEO 29722",
+        "custom data": {
+            "genres": ["Comedy"],
+            "ageRestriction": "16+",
+            "custom name": "CustomData",
+            "custom value": "mMgcCIErFk48fviBY34mPcySKUtN51NK"
+        },
+        "drm": {
+            "fairplay": {
+                "certificateUrl": "https://d8qtl3txcpjuu.cloudfront.net/fairplay.cer",
+                "processSpcUrl": "https://fps.ezdrm.com/api/licenses/fd2070e7-87ca-411a-9d8f-64583172143e"
+            }
+        },
+        "offline_ios_file": "https://d8qtl3txcpjuu.cloudfront.net/7786/video/29722/drmshield/hls/master_7786_29722_offline_ios.m3u8"
+    },
+    {
+        "title": "VIDEO #29719",
+        "custom data": {
+            "genres": ["Comedy"],
+            "ageRestriction": "16+",
+            "custom name": "CustomData",
+            "custom value": "55AbbAc1sVR3TtWNgDmcJBX33QI4Vk8F"
+        },
+        "drm": {
+            "fairplay": {
+                "certificateUrl": "https://d8qtl3txcpjuu.cloudfront.net/fairplay.cer",
+                "processSpcUrl": "https://fps.ezdrm.com/api/licenses/4da03684-be92-4fd6-b37b-e0e58d7d8084"
+            }
+        },
+        "offline_ios_file": "https://d8qtl3txcpjuu.cloudfront.net/7786/video/29719/drmshield/hls/master_7786_29719_offline_ios.m3u8"
+    }
+    ]
+}

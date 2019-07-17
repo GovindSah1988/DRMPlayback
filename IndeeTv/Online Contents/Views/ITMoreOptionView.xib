@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ITMoreOptionView" customModule="IndeeTv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ey-0D-Scz">
+                    <rect key="frame" x="0.0" y="0.0" width="130" height="45"/>
+                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                    <state key="normal" title="Play Locally">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="playLocallyTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZZc-fa-giN"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAx-PD-Ee9">
+                    <rect key="frame" x="8" y="44.5" width="114" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BoU-h3-MmA"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-t9-3Yo">
+                    <rect key="frame" x="0.0" y="45" width="130" height="45"/>
+                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="J7X-94-wO9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.58039215686274503" blue="1" alpha="0.94999999999999996" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NAx-PD-Ee9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0kb-15-ZUd"/>
+                <constraint firstItem="NAx-PD-Ee9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5As-tm-rWW"/>
+                <constraint firstAttribute="bottom" secondItem="ATW-t9-3Yo" secondAttribute="bottom" id="6lo-14-eAm"/>
+                <constraint firstAttribute="trailing" secondItem="ATW-t9-3Yo" secondAttribute="trailing" id="CwJ-4M-gaA"/>
+                <constraint firstItem="9Ey-0D-Scz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TFt-WS-T9m"/>
+                <constraint firstItem="ATW-t9-3Yo" firstAttribute="height" secondItem="9Ey-0D-Scz" secondAttribute="height" id="UrL-op-iyV"/>
+                <constraint firstItem="ATW-t9-3Yo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ghY-Kh-G4c"/>
+                <constraint firstItem="9Ey-0D-Scz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="krU-7l-gbj"/>
+                <constraint firstItem="ATW-t9-3Yo" firstAttribute="width" secondItem="9Ey-0D-Scz" secondAttribute="width" id="qYm-wm-2Ro"/>
+                <constraint firstAttribute="trailing" secondItem="9Ey-0D-Scz" secondAttribute="trailing" id="thE-5L-U6M"/>
+                <constraint firstAttribute="trailing" secondItem="NAx-PD-Ee9" secondAttribute="trailing" constant="8" id="uJ6-mb-6z7"/>
+                <constraint firstItem="ATW-t9-3Yo" firstAttribute="top" secondItem="9Ey-0D-Scz" secondAttribute="bottom" id="yNH-Uz-bHK"/>
+                <constraint firstItem="NAx-PD-Ee9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="yrh-iB-NxF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteBT" destination="ATW-t9-3Yo" id="OvB-qh-7jT"/>
+                <outlet property="playLocallyBT" destination="9Ey-0D-Scz" id="H0P-KZ-Pfb"/>
+            </connections>
+        </view>
+    </objects>
+</document>
